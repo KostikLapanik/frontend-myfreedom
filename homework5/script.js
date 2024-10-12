@@ -1,5 +1,5 @@
 // 1
-// 1 вариант
+
 // let userNumber = prompt('Введите число больше 100');
 
 // while (userNumber < 100) {
@@ -10,21 +10,6 @@
 
 //   userNumber = prompt('Введите число больше 100 (еще одна попытка)');
 // }
-
-// 2 вариант
-// let userNumber = prompt('Введите число больше 100');
-
-// while (true) {
-//   if (userNumber === null) {
-//     console.log("Пользователь нажал Esc");
-//     break;
-//   }
-
-//   if (userNumber < 100) {
-//     userNumber = prompt('Введите число больше 100 (еще одна попытка)');
-//   } 
-// }
-
 
 // 2
 // const number = +prompt('Введите число от 0 до 3', '')
