@@ -28,3 +28,15 @@ if (userLogin == userPassword){
 } else {
     alert('Доступ запрещён')
 }
+
+// 4
+let n = prompt('Введите число');
+let result = 0
+let i = 0
+
+while(i < n){
+    result += i
+    i++
+}
+
+alert(result)
