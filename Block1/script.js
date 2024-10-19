@@ -18,3 +18,13 @@ if (firstNumber == secondNumber){
 } else{
     alert('Второе число больше первого!')
 }
+
+// 3
+let userLogin = prompt('Введите логин')
+let userPassword = prompt('Введите пароль')
+
+if (userLogin == userPassword){
+    alert('Доступ разрешён')
+} else {
+    alert('Доступ запрещён')
+}
