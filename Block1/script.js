@@ -78,3 +78,32 @@ do{
         alert(`Квадрат вашего числа равен ${userNumber*userNumber}`)
     }
 } while(userNumber < 0)
+
+// 9
+let weekDay = prompt('Введите номер дня недели')
+
+switch(weekDay){
+    case '1':
+        alert('Ваш день недели: понедельник');
+        break;
+    case '2':
+        alert('Ваш день недели: вторник');
+        break;
+    case '3':
+        alert('Ваш день недели: среда');
+        break;
+    case '4':
+        alert('Ваш день недели: четверг');
+        break;
+    case '5':
+        alert('Ваш день недели: пятница');
+        break;
+    case '6':
+        alert('Ваш день недели: суббота');
+        break;
+    case '7':
+        alert('Ваш день недели: воскресенье');
+        break;
+    default:
+        alert('Вы что не знаете сколько дней в недели?')
+}
