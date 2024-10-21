@@ -40,3 +40,8 @@ while(i < n){
 }
 
 alert(result)
+
+// 5
+for(let i = 1; i < 11; i++){
+    console.log(`3 умножить на ${i} = ${i * 3}`);
+}
