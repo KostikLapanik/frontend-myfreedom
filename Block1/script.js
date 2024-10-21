@@ -1,11 +1,11 @@
 // 1
-let userNumber = prompt('Введите число');
+// let userNumber = prompt('Введите число');
 
-if (userNumber % 2 == 0){
-    alert('Чётное!')
-} else {
-    alert('Не чётное!')
-}
+// if (userNumber % 2 == 0){
+//     alert('Чётное!')
+// } else {
+//     alert('Не чётное!')
+// }
 
 // 2
 let firstNumber = prompt('Введите первое число')
@@ -67,3 +67,14 @@ for(let i = 1; i < 21; i++){
         console.log(i);
     } 
 }
+
+// 8
+let userNumber;
+
+do{
+    userNumber = prompt('Введите положительное число')
+
+    if(userNumber > 0){
+        alert(`Квадрат вашего числа равен ${userNumber*userNumber}`)
+    }
+} while(userNumber < 0)
