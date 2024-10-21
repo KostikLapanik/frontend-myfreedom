@@ -45,3 +45,18 @@ alert(result)
 for(let i = 1; i < 11; i++){
     console.log(`3 умножить на ${i} = ${i * 3}`);
 }
+
+// 6
+let firstUserNumber = prompt('Введите первое число')
+let secondUserNumber = prompt('Введите второе число')
+let thirdUserNumber = prompt('Введите третье число')
+
+if(firstUserNumber > secondUserNumber && firstUserNumber > thirdUserNumber){
+    alert(`Число ${firstUserNumber} больше всех!`)
+} else if(secondUserNumber > firstUserNumber && secondUserNumber > thirdUserNumber){
+    alert(`Число ${secondUserNumber} больше всех!`)
+} else if(thirdUserNumber > firstUserNumber && thirdUserNumber > secondUserNumber){
+    alert(`Число ${thirdUserNumber} больше всех!`)
+} else{
+    alert('Числа равны')
+}
