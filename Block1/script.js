@@ -60,3 +60,10 @@ if(firstUserNumber > secondUserNumber && firstUserNumber > thirdUserNumber){
 } else{
     alert('Числа равны')
 }
+
+// 7
+for(let i = 1; i < 21; i++){
+    if(i % 3 == 0){
+        console.log(i);
+    } 
+}
