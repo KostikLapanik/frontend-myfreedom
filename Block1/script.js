@@ -30,16 +30,16 @@ if (userLogin == userPassword){
 }
 
 // 4
-let n = prompt('Введите число');
-let result = 0
-let i = 0
+// let n = prompt('Введите число');
+// let result = 0
+// let i = 0
 
-while(i < n){
-    result += i
-    i++
-}
+// while(i < n){
+//     result += i
+//     i++
+// }
 
-alert(result)
+// alert(result)
 
 // 5
 for(let i = 1; i < 11; i++){
@@ -107,3 +107,50 @@ switch(weekDay){
     default:
         alert('Вы что не знаете сколько дней в недели?')
 }
+
+// 10
+function greet(name){
+    alert(`Привет ${name}`)
+}
+
+greet(prompt('Введите своё имя'))
+
+// 11
+function sum(a, b){
+    return a + b
+}
+
+let numberOne = prompt('Введите первое число')
+let numberTwo = prompt('Введите второе число')
+
+alert(sum(+numberOne, +numberTwo))
+
+// 12
+const pNumber = 3.14
+
+function circleArea(r){
+    return pNumber*r*r
+}
+
+let userRadius = prompt('Введите радиус круга')
+alert(`Площадь круга с радиусом ${userRadius} см равна ${circleArea(userRadius)} см2`)
+
+// 13
+function isEven(n){
+    if (n % 2 == 0){
+        return true
+    } else {
+        return false
+    }
+}
+
+let n = prompt('Введите число')
+console.log(isEven(n));
+
+// 14
+function convertTemp(c){
+    return Math.round(c * (9/5) + 32)
+}
+
+let userTemp = prompt('Введите температуру в цельсиях')
+alert(`${userTemp} градусов цльсия = ${convertTemp(userTemp)} градусов фаренгейта`)
