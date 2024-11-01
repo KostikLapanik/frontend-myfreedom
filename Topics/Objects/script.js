@@ -10,8 +10,8 @@ console.log(user);
 // 2
 // let object = {}
 
-function isEmpty(object){
-    for(let key in object){
+function isEmpty(object) {
+    for (let key in object) {
         return false
     }
 
@@ -30,8 +30,26 @@ let salaries = {
 
 let num = 0;
 
-for(let key in salaries){
+for (let key in salaries) {
     num += salaries[key]
 }
 
 console.log(num)
+
+// 4
+let menu = {
+    width: 230,
+    height: 125,
+    title: 'My object',
+}
+
+function multiplyNumeric(obj) {
+    for (let key in obj) {
+        if (typeof (obj[key]) == 'number') {
+            obj[key] *= 2
+        }
+    }
+}
+
+multiplyNumeric(menu);
+console.log(menu);
