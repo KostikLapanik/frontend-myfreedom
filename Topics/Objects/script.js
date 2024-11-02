@@ -44,12 +44,16 @@ let menu = {
 }
 
 function multiplyNumeric(obj) {
-    for (let key in obj) {
-        if (typeof (obj[key]) == 'number') {
-            obj[key] *= 2
+    const newObj = Object.assign({}, obj)
+
+    for (let key in newObj) {
+        if (typeof (newObj[key]) === 'number') {
+            newObj[key] *= 2
         }
     }
+
+    return newObj
 }
 
-multiplyNumeric(menu);
-console.log(menu);
+const newMenu = multiplyNumeric(menu);
+console.log(newMenu);
