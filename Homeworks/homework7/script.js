@@ -1,5 +1,5 @@
 // 1
-person = {
+let person = {
     name: 'Kostya',
     age: 13,
     greet() {
@@ -15,7 +15,7 @@ person.haveBirthday()
 console.log(person.age)
 
 // 2
-counter = {
+let counter = {
     count: 0,
     increment() {
         this.count++
@@ -44,7 +44,7 @@ console.log(counter.count)
 
 // 3
 
-Settings = {
+let Settings = {
     name: 'Lapa',
     age: 1,
     setProperty(key, value) {
