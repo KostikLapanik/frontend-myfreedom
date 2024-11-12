@@ -4,7 +4,7 @@ function getSumOfArrayElements(array) {
     let sumOfArrayElements = 0;
     for (let i = 0; i < array.length; i++) {
         if (typeof array[i] == 'number') {
-            sumOfArrayElements += Number(array[i])
+            sumOfArrayElements += array[i]
         }
     }
 
@@ -41,15 +41,15 @@ let people = [
 ];
 
 function getNameAndAddressOfAdults(people) {
-    let NameAndAddressOfAdults = [];
+    let nameAndAddressOfAdults = [];
 
     for (let i = 0; i < people.length; i++) {
         if (people[i]['age'] >= 18 && typeof people[i]['address'] == 'string') {
-            NameAndAddressOfAdults.push(people[i]['name'])
+            nameAndAddressOfAdults.push(people[i]['name'])
         }
     }
 
-    return NameAndAddressOfAdults
+    return nameAndAddressOfAdults
 }
 
 console.log(getNameAndAddressOfAdults(people))
