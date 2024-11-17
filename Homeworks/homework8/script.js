@@ -74,7 +74,7 @@ function sumInput() {
     let sumInputArray = []
 
     while (true) {
-        if (!isNaN(userInput)) {
+        if (!Number.isNaN(parseInt(userInput)) && !Number.isNaN(+userInput)) {
             sumInputArray.push(userInput)
             userInput = parseInt(prompt('Введите значение'))
         } else {
