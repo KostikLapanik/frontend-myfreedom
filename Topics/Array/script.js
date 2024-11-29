@@ -71,6 +71,7 @@ let findMoreThenThreeElement = array.find(item => item > 3)
 console.log('Первый элемент в массиве больше 3 -', findMoreThenThreeElement);
 
 // Вот от сюда ДЗ!!!
+// first part
 // 8
 let newArray = [1, 2, 3, 4, 1, 1, 2, 3, 3, 5, 4, 14, 1, 3, 0, 2]
 console.log('Первый элемент в массиве больше 3 под индексом - ', newArray.findIndex(item => item > 3)) // 3
@@ -79,3 +80,29 @@ console.log('Последний элемент в массиве больше 3 
 // 9
 let newSortedArray = newArray.filter(item => item > 3)
 console.log(newSortedArray)
+
+// second part
+
+// 1
+let mapedArr = [1, 2, 3, 4, 5].map(item => item * 2)
+console.log('[1, 2, 3, 4, 5] * 2 = ', mapedArr)
+
+// 2
+let sortedArr = [3, 1, 4, 1, 5, 9, 2, 6].sort((a, b) => a - b)
+console.log('Sorted array - ', sortedArr)
+
+// 3
+let reversedArr = ['hello', 'world'].reverse()
+console.log('А тут перевёрнутый массив - ', reversedArr)
+
+// 4
+let splitedString = 'apple,banana,cherry'.split(',')
+console.log('Строка из массива', splitedString)
+
+// 5
+let joinedToStringArr = ['hello', 'world'].join(' ')
+console.log('А тут массив из строки', joinedToStringArr)
+
+// 6
+let reducedArr = [1, 2, 3, 4, 5].reduce((accumulator, currentNumber) => accumulator + currentNumber, 0)
+console.log('Сложили все числа массива и получили - ', reducedArr)
