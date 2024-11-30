@@ -106,3 +106,23 @@ console.log('А тут массив из строки', joinedToStringArr)
 // 6
 let reducedArr = [1, 2, 3, 4, 5].reduce((accumulator, currentNumber) => accumulator + currentNumber, 0)
 console.log('Сложили все числа массива и получили - ', reducedArr)
+
+// // 1
+// let mapedArr = [1, 2, 3, 4, 5, 6].map(item => item * 2 - 2)
+// console.log(mapedArr)
+
+// // 2
+// let sortedArr = [3, 1, 4, 1, 5, 9, 2, 6].sort((a, b) => b - a)
+// console.log(sortedArr)
+
+// // 3
+// let reversedArr = ['hello', 'world'].reverse()
+// console.log(reversedArr)
+
+// // 4, 5
+// let joinedArr = 'apple,banana,cherry'.split(',').join('!!!')
+// console.log(joinedArr)
+
+// // 6
+// let reducedArr = [1, 2, 3, 4, 5].reduce((multiplication, currentNumber) => multiplication * currentNumber, 1) + 20
+// console.log(reducedArr)
