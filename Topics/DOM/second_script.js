@@ -32,4 +32,4 @@ setTimeout(() => searchBarContainer.style.backgroundColor = 'red', 2000)
 // 4
 
 let notificationDiv = document.querySelector('.notification')
-notificationDiv.style.cssText += `display: flex; width: 100%; display: flex; flex-direction: column`
+notificationDiv.style.cssText += `display: flex; width: 100%; flex-direction: column`
