@@ -19,16 +19,17 @@ setCookie('userage', '37')
 
 function hasCookie(name) {
     let cookieArray = document.cookie.split(';')
+    let isFoundedName = false;
 
     cookieArray.forEach(elem => {
         elem = elem.trim().toLowerCase();
 
         if (elem.includes(name)) {
-            return true
+            isFoundedName = true
         }
     });
 
-    return false
+    return isFoundedName
 }
 
 let nameSelector = prompt('Введите название cookie, которое хотите праверить:');
@@ -36,6 +37,6 @@ nameSelector = nameSelector.toLowerCase()
 
 if (hasCookie(nameSelector)) {
     alert(`Cookie ${nameSelector} существуют!`)
-} else{
+} else {
     alert(`Cookie ${nameSelector} не существуют.`)
 }
