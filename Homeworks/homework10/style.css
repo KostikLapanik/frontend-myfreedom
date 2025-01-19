@@ -1,0 +1,9 @@
+#some_form{
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
